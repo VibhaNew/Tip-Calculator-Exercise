@@ -1,0 +1,16 @@
+print("Welcome to the tip calculator!")
+Totalbill = float(input("What was the total bill?\n$"))
+tip = int(input("How much tip would you like to give?10,12,15?\n"))
+num_people = int(input("How many to split the bill?\n"))
+Bill_perperson = (((Totalbill*(tip*0.01)+Totalbill)/num_people))
+print(f"Each person should pay: $ {round(Bill_perperson,3)}")            # {round(Bill_perperson, 3)} gives round figure of the bill per person with rounding done upto 3 digits
+
+OUTPUT 
+Welcome to the tip calculator!
+What was the total bill?
+$269.97
+How much tip would you like to give?10,12,15?
+12
+How many to split the bill?
+3
+Each person should pay: $ 100.789 
